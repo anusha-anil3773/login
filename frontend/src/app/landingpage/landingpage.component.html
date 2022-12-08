@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-light pl-5">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+ <img src="../../assets/ictlogo.png" width="50" height="50" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand pl-2" href="#"><strong>ICTAK LEARNER TRACKER</strong></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+     <li class="nav-item  active">
+          <a class="nav-link" style="color:white ;" routerLink="/landing">Home</a>
+        </li>
+        <li class="nav-item dropdown  active">
+          <a class="nav-link dropdown-toggle"  style="color:white ;" routerLink="/landing" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Courses
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Full Stack Develepment</a>
+            <a class="dropdown-item" href="#">Data Science</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">RPA Development</a>
+          </div>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link" style="color:white ;"   (click)="logout()" routerLink="" >LogOut</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- card -->
+<!-- <div class="category-name">DETAILS</div> -->
+<div class="category-name"></div> <br/>
+            <div class="card-category-1">
+    <div class="basic-card basic-card-aqua" *ngIf="!isAdmin">
+        <div class="card-content">
+            <span class="card-title">Learner</span>
+            </div>
+<div class="card-link" >
+            <a  routerLink="/learner" title="View Details"><span>View Details</span></a>
+        </div>
+    </div>
+<div class="basic-card basic-card-lips" *ngIf="!isAdmin">
+        <div class="card-content">
+            <span class="card-title" >TrainerHead</span>
+       </div>
+<div class="card-link">
+            <a   routerLink="/trainer" title="View Details"><span>View Details</span></a>
+        </div>
+    </div>
+<div class="basic-card basic-card-dark" *ngIf="!isAdmin">
+        <div class="card-content">
+            <span class="card-title">PlacementOfficer </span>
+     </div>
+<div class="card-link">
+            <a  routerLink="/placement" title="View Details"><span>View Details</span></a>
+        </div>
+    </div>
+    
+</div>
+
+<br/>
+

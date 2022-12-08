@@ -1,0 +1,32 @@
+<div class="heading" style="background-color: rgb(9, 103, 103)">
+    <img style="height:80px ;padding-top:15px;display: block;margin-left: auto;margin-right: auto;" src="../../assets/ictlogo.png" alt="logo">
+			<div class="logo-header">
+			  <h1 style="padding-bottom:10px;padding-top:15px;font-size: 30px; font-weight:600;color: white; text-align: center;">
+				<span class="logo">Welcome to&nbsp;</span><span class="logo"> ICTAK&nbsp;</span><span class="logo">Learner Tracker</span><br>
+			</h1>
+				</div></div>
+
+<div class="vh-60 d-flex justify-content-center align-items-center " >
+	<div class="col-md-5 p-3 shadow-sm border rounded-5 mt-5   bg-white">
+		<h2 class="text-center mb-3">Login Form</h2>
+		<form  (ngSubmit)="loginUser()" method="POST">
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Email address</label>
+				<input type="email" class="form-control " id="exampleInputEmail1" aria-describedby="emailHelp" 
+				 [(ngModel)]="user.email" name="email"  required >
+				 
+				</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Password</label>
+				<input type="password" class="form-control" id="exampleInputPassword1"
+				[(ngModel)]="user.password" name="password"  required minlength="6">
+				
+			</div>
+			<p class="small"><a style="text-decoration: none;" class="text-primary" href="">Forgot password?</a></p>
+			<div class="d-grid">
+				<button  class="btn " type="submit"><span>Login </span></button>
+			</div>
+		</form>
+		
+	</div>
+</div>
